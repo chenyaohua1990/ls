@@ -7,6 +7,6 @@
     <context:property-placeholder location="classpath:application.properties"/>
     <bean id="userSerice" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
         <property name="serviceInterface" value="com.skms.api.UserService"/>
-        <property name="serviceUrl" value="${lm.remoting}/userSerice"/>
+        <property name="serviceUrl" value="${lm.remoting}/userServiceImp"/>
     </bean>
 </beans>
